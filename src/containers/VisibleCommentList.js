@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import CommentList from '../components/CommentList';
 
 const mapStateToProps = (state) => ({
-  comments: state.comments
+  comments: state.items
 });
 
 const mapDispatchToProps = ({

@@ -1,21 +1,33 @@
 {
-  "comments": [
+  "items": [
     {
       "id": "A1",
       "snippet": {
-        "textDisplay": "It's my first comment!"
+        "topLevelComment": {
+          "snippet": {
+            "textDisplay": "It's my first comment!"
+          }
+        }
       }
     },
     {
       "id": "A2",
       "snippet": {
-        "textDisplay": "That's great!"
+        "topLevelComment": {
+          "snippet": {
+            "textDisplay": "That's great!"
+          }
+        }
       }
     },
     {
       "id": "A3",
       "snippet": {
-        "textDisplay": "Happy!"
+        "topLevelComment": {
+          "snippet": {
+            "textDisplay": "Happy!"
+          }
+        }
       }
     }
   ]

@@ -13,7 +13,11 @@ CommentList.propTypes = {
   comments: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     snippet: PropTypes.shape({
-      textDisplay: PropTypes.string.isRequired
+      topLevelComment: PropTypes.shape({
+        snippet: PropTypes.shape({
+          textDisplay: PropTypes.string.isRequired
+        })
+      })
     })
   }))
 };
