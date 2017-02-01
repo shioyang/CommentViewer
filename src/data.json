@@ -29,6 +29,26 @@
           }
         }
       }
+    },
+    {
+      "id": "A4",
+      "snippet": {
+        "topLevelComment": {
+          "snippet": {
+            "textDisplay": "Good."
+          }
+        }
+      }
+    },
+    {
+      "id": "A5",
+      "snippet": {
+        "topLevelComment": {
+          "snippet": {
+            "textDisplay": "Bad."
+          }
+        }
+      }
     }
   ]
 }
