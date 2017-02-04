@@ -2,11 +2,14 @@ import React, { PropTypes } from 'react';
 import Comment from './Comment';
 
 const CommentList = ({ comments }) => (
-  <ul>
+  <table>
+    <tr>
+      <th>Published At</th><th>Like Count</th><th>Text Display</th>
+    </tr>
     { comments.map(comment =>
         <Comment key={comment.id} {...comment} />
     )}
-  </ul>
+  </table>
 );
 
 CommentList.propTypes = {

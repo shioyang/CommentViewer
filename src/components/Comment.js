@@ -1,9 +1,11 @@
 import React, { PropTypes } from 'react';
 
 const Comment = ({ id, snippet }) => (
-  <li>
-    {snippet.topLevelComment.snippet.textDisplay}
-  </li>
+  <tr>
+    <td>{snippet.topLevelComment.snippet.publishedAt}</td>
+    <td>{snippet.topLevelComment.snippet.likeCount}</td>
+    <td>{snippet.topLevelComment.snippet.textDisplay}</td>
+  </tr>
 );
 
 Comment.PropTypes = {
