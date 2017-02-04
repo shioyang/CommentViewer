@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
+import './CommentList.css';
 import Comment from './Comment';
 
 const CommentList = ({ comments }) => (
-  <table>
+  <table className="commentList">
     <tr>
       <th>Published At</th><th>Like Count</th><th>Text Display</th>
     </tr>
