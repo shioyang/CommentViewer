@@ -1,3 +1,12 @@
 .commentList {
   padding: 40px;
 }
+
+.commentList th {
+  text-align: left;
+}
+
+.commentList th,
+.commentList td {
+  padding: 0 10px 10px 10px;
+}
