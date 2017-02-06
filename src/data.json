@@ -5,7 +5,8 @@
       "snippet": {
         "topLevelComment": {
           "snippet": {
-            "textDisplay": "It's my first comment!"
+            "textDisplay": "It's my first comment!",
+            "likeCount": 1
           }
         }
       }
@@ -15,7 +16,8 @@
       "snippet": {
         "topLevelComment": {
           "snippet": {
-            "textDisplay": "That's great!"
+            "textDisplay": "That's great!",
+            "likeCount": 99
           }
         }
       }
@@ -25,7 +27,8 @@
       "snippet": {
         "topLevelComment": {
           "snippet": {
-            "textDisplay": "Happy!"
+            "textDisplay": "Happy!",
+            "likeCount": 10
           }
         }
       }
@@ -35,7 +38,8 @@
       "snippet": {
         "topLevelComment": {
           "snippet": {
-            "textDisplay": "Good."
+            "textDisplay": "Good.",
+            "likeCount": 25
           }
         }
       }
@@ -45,7 +49,8 @@
       "snippet": {
         "topLevelComment": {
           "snippet": {
-            "textDisplay": "Bad."
+            "textDisplay": "Bad.",
+            "likeCount": 50
           }
         }
       }
