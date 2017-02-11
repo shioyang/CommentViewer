@@ -2,13 +2,16 @@ import React, { PropTypes } from 'react';
 import './CommentList.css';
 import Comment from './Comment';
 
-const CommentList = ({ comments }) => (
+const CommentList = ({ comments, onCommentClick }) => (
   <table className="commentList">
     <tr>
       <th>Published At</th><th>Like Count</th><th>Text Display</th>
     </tr>
     { comments.map(comment =>
-        <Comment key={comment.id} {...comment} />
+        <Comment
+          key={comment.id}
+          {...comment}
+          onClick={() => onCommentClick(comment.snippet.topLevelComment.snippet.textDisplay)} />
     )}
   </table>
 );
@@ -23,7 +26,8 @@ CommentList.propTypes = {
         })
       })
     })
-  }))
+  })),
+  onCommentClick: PropTypes.func.isRequired
 };
 
 export default CommentList;
