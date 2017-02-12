@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import './CommentList.css';
 import Comment from './Comment';
 
-const CommentList = ({ comments, onCommentClick }) => (
+const CommentList = ({ comments, selected, onCommentClick }) => (
   <table className="commentList">
     <tbody>
       <tr>
@@ -12,6 +12,7 @@ const CommentList = ({ comments, onCommentClick }) => (
           <Comment
             key={comment.id}
             {...comment}
+            selected
             onClick={() => onCommentClick(comment.snippet.topLevelComment.snippet.textDisplay)} />
       )}
     </tbody>
@@ -29,6 +30,7 @@ CommentList.propTypes = {
       })
     })
   })),
+  selected: PropTypes.string,
   onCommentClick: PropTypes.func.isRequired
 };
 

@@ -3,7 +3,8 @@ import CommentList from '../components/CommentList';
 import { selectComment } from '../actions/index';
 
 const mapStateToProps = (state) => ({
-  comments: state.comments
+  comments: state.comments,
+  selected: state.selected
 });
 
 const mapDispatchToProps = ({

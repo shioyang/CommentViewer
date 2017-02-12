@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-const Comment = ({ id, snippet, onClick }) => (
+const Comment = ({ id, snippet, selected, onClick }) => (
   <tr>
     <td>{snippet.topLevelComment.snippet.publishedAt}</td>
     <td>{snippet.topLevelComment.snippet.likeCount}</td>
@@ -18,6 +18,7 @@ Comment.PropTypes = {
       })
     })
   }),
+  selected: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired
 };
 
