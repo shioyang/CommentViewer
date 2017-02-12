@@ -4,15 +4,17 @@ import Comment from './Comment';
 
 const CommentList = ({ comments, onCommentClick }) => (
   <table className="commentList">
-    <tr>
-      <th>Published At</th><th>Like Count</th><th>Text Display</th>
-    </tr>
-    { comments.map(comment =>
-        <Comment
-          key={comment.id}
-          {...comment}
-          onClick={() => onCommentClick(comment.snippet.topLevelComment.snippet.textDisplay)} />
-    )}
+    <tbody>
+      <tr>
+        <th>Published At</th><th>Like Count</th><th>Text Display</th>
+      </tr>
+      { comments.map(comment =>
+          <Comment
+            key={comment.id}
+            {...comment}
+            onClick={() => onCommentClick(comment.snippet.topLevelComment.snippet.textDisplay)} />
+      )}
+    </tbody>
   </table>
 );
 
