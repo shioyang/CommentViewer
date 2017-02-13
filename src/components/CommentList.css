@@ -10,3 +10,8 @@
 .commentList td {
   padding: 0 10px 10px 10px;
 }
+
+.commentList .selected span {
+  padding: 0 5px;
+  font-weight: bold;
+}
