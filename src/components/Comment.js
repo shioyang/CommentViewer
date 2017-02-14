@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react';
+import './Comment.css';
 
 const Comment = ({ id, snippet, onClick }) => (
-  <tr>
+  <tr className="comment">
     <td>{snippet.topLevelComment.snippet.publishedAt}</td>
     <td>{snippet.topLevelComment.snippet.likeCount}</td>
     <td>{snippet.topLevelComment.snippet.textDisplay}</td>
