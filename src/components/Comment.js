@@ -1,14 +1,15 @@
 import React, { PropTypes } from 'react';
 import './Comment.css';
 import RaisedButton from 'material-ui/RaisedButton';
+import { TableRow, TableRowColumn } from 'material-ui/Table';
 
 const Comment = ({ id, snippet, onClick }) => (
-  <tr className="comment">
-    <td>{snippet.topLevelComment.snippet.publishedAt}</td>
-    <td>{snippet.topLevelComment.snippet.likeCount}</td>
-    <td>{snippet.topLevelComment.snippet.textDisplay}</td>
-    <td><RaisedButton onClick={onClick}>Click</RaisedButton></td>
-  </tr>
+  <TableRow className="comment">
+    <TableRowColumn>{snippet.topLevelComment.snippet.publishedAt}</TableRowColumn>
+    <TableRowColumn>{snippet.topLevelComment.snippet.likeCount}</TableRowColumn>
+    <TableRowColumn>{snippet.topLevelComment.snippet.textDisplay}</TableRowColumn>
+    <TableRowColumn><RaisedButton onClick={onClick}>Click</RaisedButton></TableRowColumn>
+  </TableRow>
 );
 
 Comment.PropTypes = {

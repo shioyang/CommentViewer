@@ -1,22 +1,28 @@
 import React, { PropTypes } from 'react';
 import './CommentList.css';
 import Comment from './Comment';
+import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow } from 'material-ui/Table';
 
 const CommentList = ({ comments, selected, onCommentClick }) => (
   <div className="commentList">
-    <table>
-      <tbody>
-        <tr>
-          <th>Published At</th><th>Like Count</th><th>Text Display</th>
-        </tr>
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHeaderColumn>Published At</TableHeaderColumn>
+          <TableHeaderColumn>Like Count</TableHeaderColumn>
+          <TableHeaderColumn>Text Display</TableHeaderColumn>
+          <TableHeaderColumn>Action</TableHeaderColumn>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
         { comments.map(comment =>
             <Comment
               key={comment.id}
               {...comment}
               onClick={() => onCommentClick(comment.id)} />
         )}
-      </tbody>
-    </table>
+      </TableBody>
+    </Table>
     <div className="selected">
       <label>Selected:</label>
       <span>{selected}</span>
